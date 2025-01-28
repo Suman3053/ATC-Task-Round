@@ -49,12 +49,12 @@ deployment to handle the pods and service for network pusposes where it can assi
 Navigate to monitoring-files directory to deploy proetheus and grafana
 
 **kubernetes commands**
-1. kubectl apply -f <prometheus-deploy.yaml, grafana.yaml> pt deploy the coonfiguration
+1. kubectl apply -f <prometheus-deploy.yaml, grafana.yaml> to deploy the configuration
 2. kubectl get pods - to check the deployed configuation
 3. kubectl port-forward svc/grafana-deploy 3000:3000, kubectl port-forward svc/prometheus-deploy 9090:9090
  - to forward the port
 
-4. to access grafana and promethues dashboard goto to port 9090 - prometheus and 3000 for grafana.
+4. to access grafana and promethues dashboard use this port numbers 9090 - prometheus and 3000 for grafana.
 5. kubectl port-forward pod/static-web-app-76d8795875-gl7jg 8080:80 - if our pod exposing to port 80 then we can forward te port running to port 8080:80
 6. we can now open the application in our browser by visiting http://localhost:8080
 
